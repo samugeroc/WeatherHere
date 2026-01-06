@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Weather Here</h1>
+
+    <div class="search">
+      <input 
+        type="text" 
+        id="cityInput" 
+        placeholder="Digite uma cidade"
+      />
+      <button id="searchBtn">Buscar</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="current-weather">
+      <h2 id="cityName">Cidade</h2>
+      <p id="temperature">--°C</p>
+      <p id="description">---</p>
+
+      <div class="min-max">
+        <span id="minTemp">Min: --°C</span>
+        <span id="maxTemp">Max: --°C</span>
+      </div>
+    </section>
+
+    <section class="forecast">
+        <h3>Próximos 4 dias</h3>
+        <div id="forecast" class="forecast-cards">
+        </div>
+    </section>
+  </main>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

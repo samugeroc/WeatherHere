@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  background: #3e51fe;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.search input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.search button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #3a6ce0;
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+  padding: 1rem;
+}
+
+/* CLIMA ATUAL */
+.current-weather {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#temperature {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.min-max {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* PREVISÃO */
+.forecast {
+  margin-top: 1.5rem;
+}
+
+.forecast-cards {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+
+.forecast-card {
+  min-width: 90px;
+  background: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+
